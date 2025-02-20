@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dracula/css/dracula.min.css">
+    <title>Portifolio - Laura Lobo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <xmp></Laura Lobo></xmp>
+            </h1>
+            <a href="#" id="menu"><img src="./img/menu.png" alt="Menu"></a>
+            <ul class="menu">
+                <li><a href="">Página Inicial</a></li>
+                <li><a href="#informacao">Sobre Mim</a></li>
+                <li><a href="#minhas-habilidades">Skills</a></li>
+                <li><a href="#projetos">Meus Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="informacao">
+            <div id="sobre">
+               
+                <h1>Laura Lobo</h1>
+                <h2>Sistemas de Informação <br>
+                    4º Período 
+                    <br>22 anos
+                    </h2>
+                <h3>Sempre tive contato com a tecnologia, então a área 
+                    sempre me chamou a atenção. Quando comecei o curso,
+                     tive a certeza de que estava no caminho certo para 
+                     alcançar meus sonhos.
+                </h3>  <br>
+            </div>
+            <div id="codigo">
+                <span><pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let line_under = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--bottom"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+<span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu.isSelected </span>= false<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectWriting(element, </span>time) {
+    let element_array = element.innerText.split(<span class="hljs-string" style="color: rgb(224, 196, 108);">""</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+    element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    function writeSymbols() {
+        element.innerText += element_array[element.count]<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        element.count++<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+        if (element.count &lt;= element_array.length) {
+            setTimeout(() =&gt; {
+                writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            }, time)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        } else if (element.count &gt;= element_array.length) {
+            element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+            writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        }
+    }
+    writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+}</pre></span>
+            </div>
+        </section>
+
+        <section id="historia">
+
+            <h1 class="titulo"> Sobre mim </h1> 
+
+            <div class="conteudo">
+            <img src="./img/minhafoto.png" alt="Retangulo" class="foto">
+            <div class="descricao">
+                <h2>Sou estudante do 4º período da faculdade e tenho experiência em desenvolvimento
+                    web e programação. Fiz diversos cursos, incluindo um curso completo na Udemy 
+                    sobre HTML5, CSS3, Bootstrap, PHP, MySQL, Ajax, Git e GitHub. Além disso, 
+                    já trabalhei na empresa do meu pai, onde tive contato desde cedo com tecnologia,
+                    pois ele foi o primeiro a ter um computador na nossa cidade e prestava assistência
+                    para empresas da região. Também participei de um projeto de extensão na minha 
+                    antiga faculdade, ensinando programação em C para alunos de escolas
+                    . Estou sempre em busca de novas oportunidades na área e aprimoramento 
+                    contínuo. <br>  <br>
+                    Adoro Desenvolvimento Web e Estrutura de Dados 1.
+            
+
+            </h2>
+        </div>
+        </div>
+        </section>
+  
+        <section id="minhas-habilidades">
+            <h1 class="titulo">Skills</h1>
+            <h2 class="titulo">Linguagens de Programação</h2>
+            <div id="habilidades">
+              
+               
+                <div class="card">
+                    <img src="./img/icon js.png" alt="JAVASCRIPT" class="normal">
+                    <img src="./img/icon js -- hover.png" alt="JAVASCRIPT" class="hover">
+                    <h1>JavaScript</h1>
+                </div>
+             
+            </div>
+        </section>
+        <section id="minhas-habilidades">
+            <h2 class="titulo">Ferramentas de desenvolvimento</h2>
+            <div id="habilidades">
+         
+                <div class="card">
+                    <img src="./img/icon git.png" alt="GIT" class="normal">
+                    <img src="./img/icon git -- hover.png" alt="GIT" class="hover">
+                    <h1>Git</h1>
+                </div>
+            </div>
+        </section>
+        <section id="minhas-habilidades">
+            <h2 class="titulo"> Tecnologias</h2>
+            <div id="habilidades">
+                <div class="card">
+                    <img src="./img/icon html.png" alt="HTML5" class="normal">
+                    <img src="./img/icon html -- hover.png" alt="HTML5" class="hover">
+                    <h1>HTML5</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon css.png" alt="CSS3" class="normal">
+                    <img src="./img/icon css - hover.png" alt="CSS" class="hover">
+                    <h1>CSS3</h1>
+                </div>
+                
+            </div>
+        </section>
+        <section id="minhas-habilidades">
+            <h1 class="titulo"> Habilidades </h1>
+            <div id="sobre">
+                <h2>Sou uma programadora que alia técnica e habilidades interpessoais.
+                    Escuta ativa, comunicação clara e tomada de decisão garantem
+                    projetos eficientes. Inteligência emocional, networking e 
+                    respeito às diferenças fortalecem meu trabalho em equipe. Com
+                    criatividade e gestão de tempo, entrego soluções inovadoras 
+                    e eficazes. </h2>
+            </div>
+            
+         
+        </section>
+ 
+        <section id="projetos"> <br>
+            <h1>Meus Projetos</h1>
+            <div id="sites">
+                <div id="shopify" allowfullscreen>
+                    <h1>Projeto LoadingPage Shopify</h1>
+                    <iframe src="./Shopify/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                    <div class="botoes">
+                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/LauraLobo/Shopify/tree/main/Shopify" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                    </div>
+                </div>
+                <div id="netflix" allowfullscreen>
+                    <h1>Projeto Clone Site Netflix</h1>
+                    <iframe src="./Netflix/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                    <div class="botoes">
+                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/LauraLobo/Netflix/tree/main/Netflix" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                    </div>
+                </div>
+                <div id="wildbeast" allowfullscreen>
+                    <h1>Projeto Site WildBest</h1>
+                    <iframe src="./WildBeast/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                    <div class="botoes">
+                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/LauraLobo/WildBeast/tree/main/WildBeast" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/LauraLobo" target="_blank"><button class="mais">VER MAIS</button></a>
+        </section>
+
+
+    </main>
+    <footer>
+        <div id="msg">
+            <h1><xmp></Laura ></xmp></h1>
+            <h2>2024, alguns direitos reservados. By: Laura Lobo.</h2>
+        </div>
+        <div id="contatos">
+            <h1>Contatos</h1>
+            <ul>
+                <li><img src="./img/gmail.png" alt="gmail"> <a href="lauralobopinheiro@hotmail.com"
+                        target="_blank">lauralobopinheiro@hotmail.com</a></li>
+                <li><img src="./img/instagram.png" alt="instagram"><a href="https://www.instagram.com/lauraaloboo/"
+                        target="_blank">@lauraaloboo</a></li>
+                <li><img src="./img/github.png" alt="github"> <a href="https://github.com/LauraLobo"
+                        target="_blank">LauraLobo</a></li>
+                <li><img src="./img/linkedin.png" alt="linkedin"><a
+                        href="https://www.linkedin.com/in/lauraaloboo/" target="_blank">Laura
+                        Lobo</a></li>
+            </ul>
+        </div>
+    </footer>
+<script>
+let menuButton = document.querySelector("#menu");
+let menu = document.querySelector(".menu");
+
+menuButton.addEventListener("click", function () {
+    menu.classList.toggle("open");
+});
+
+const botoesTelaCheia = document.querySelectorAll('.botao-tela-cheia');
+const iframes = document.querySelectorAll('iframe');
+
+botoesTelaCheia.forEach((botao, index) => {
+  botao.addEventListener('click', () => {
+    iframes[index].requestFullscreen();
+  });
+});
+</script>
+</body>
+
+</html>
