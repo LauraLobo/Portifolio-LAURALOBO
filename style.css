@@ -159,6 +159,7 @@ nav a#menu {
   gap: 20px;
   text-align: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 #historia .conteudo {
@@ -167,37 +168,46 @@ nav a#menu {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
-  padding: 0 10px;
+  flex-wrap: wrap;
+  padding: 0 50px;
   box-sizing: border-box;
 }
 
+.descricao {
+  flex: 1; /* Ocupa o restante do espaço disponível */
+  max-width: 900px; /* Define um tamanho máximo */
+  text-align: left; /* Mantém o texto alinhado à esquerda */
+}
+
 #historia h1.titulo {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   color: #8702e0;
   line-height: 1.06;
   padding-bottom: 20px;
   width: 100%;
+  text-align: center;
 }
 
 #historia h2 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.25;
   color: #F0E3CA;
   max-width: 100%;
-  text-align: justify;
-  padding: 0 5px;
+  text-align: center;
+  padding: 0 2px;
 }
 
 .foto {
   width: 180px;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10px;
   object-fit: cover;
   display: block;
+
 }
 
 /* Skills Section */
@@ -234,13 +244,16 @@ nav a#menu {
 
 .card {
   display: flex;
+
   flex-direction: column;
-  background-color: rgba(122, 67, 134, 0.62);
+  background-color: rgba(87, 30, 100, 0.795);
   height: 300px;
   width: 200px;
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease;
+  margin-right: 40px;
+  
 }
 
 .card h1 {
@@ -537,7 +550,11 @@ footer {
     margin-top: 80px;
     text-align: center;
   }
+
 }
+
+
+
 
 @media screen and (max-width: 600px) {
     #historia, 
@@ -631,11 +648,11 @@ footer {
 
   .card {
     flex-direction: row;
-    height: 80px;
+    height: 100px;
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    gap: 15px;
+    gap: 20px;
   }
 
   .card img {
@@ -671,10 +688,11 @@ footer {
   }
 
   .card {
-    width: 90%;
+    width: 100%;
     max-width: 300px;
     height: auto;
-    padding: 15px;
+    padding:  15px;
+    
   }
 }
 
