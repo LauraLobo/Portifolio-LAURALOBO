@@ -1,232 +1,295 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dracula/css/dracula.min.css">
-    <title>Portifolio - Laura Lobo</title>
+    <title>Portfólio - Laura Lobo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <nav>
-            <h1>
-                <xmp></Laura Lobo></xmp>
-            </h1>
-            <a href="#" id="menu"><img src="./img/menu.png" alt="Menu"></a>
+            <h1><xmp><Laura Lobo/></xmp></h1>
+            <button id="menuBtn"><img src="img/menu.png" alt="Menu"></button>
             <ul class="menu">
-                <li><a href="">Página Inicial</a></li>
-                <li><a href="#informacao">Sobre Mim</a></li>
-                <li><a href="#minhas-habilidades">Skills</a></li>
+                <li><a href="#home">Página Inicial</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projetos">Meus Projetos</a></li>
-                <li><a href="#contatos">Contatos</a></li>
+                <li><a href="#contato">Contatos</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="informacao">
-            <div id="sobre">
-               
+        <section id="home" class="hero">
+            <div class="hero-content">
                 <h1>Laura Lobo</h1>
-                <h2>Sistemas de Informação <br>
-                    4º Período 
-                    <br>22 anos
-                    </h2>
-                <h3>Sempre tive contato com a tecnologia, então a área 
-                    sempre me chamou a atenção. Quando comecei o curso,
-                     tive a certeza de que estava no caminho certo para 
-                     alcançar meus sonhos.
-                </h3>  <br>
+                <h2>Sistemas de Informação<br>4º Período<br>22 anos</h2>
+                <p>Sempre tive contato com a tecnologia, então a área sempre me chamou a atenção. 
+                   Quando comecei o curso, tive a certeza de que estava no caminho certo para 
+                   alcançar meus sonhos.</p>
             </div>
-            <div id="codigo">
-                <span><pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-                        
-let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-let line_under = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--bottom"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-                        
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu.isSelected </span>= false<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-                        
-function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectWriting(element, </span>time) {
-    let element_array = element.innerText.split(<span class="hljs-string" style="color: rgb(224, 196, 108);">""</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-
-    element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-    element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-
-    function writeSymbols() {
-        element.innerText += element_array[element.count]<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-        element.count++<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-
-        if (element.count &lt;= element_array.length) {
-            setTimeout(() =&gt; {
-                writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-            }, time)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-        } else if (element.count &gt;= element_array.length) {
-            element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-            element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-
-            writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-        }
-    }
-    writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
-}</pre></span>
+            <div class="code-animation">
+                <pre></pre>
             </div>
         </section>
 
-        <section id="historia">
+        <section id="sobre">
+            <h2 class="section-title">Sobre mim</h2>
+            <div class="about-content">
+                <img src="img/minhafoto.png" alt="Laura Lobo" class="profile-pic">
+                <div class="about-text">
+                    <p>Sou estudante do 4º período da faculdade e tenho experiência em desenvolvimento
+                       web e programação. Fiz diversos cursos, incluindo um curso completo na Udemy 
+                       sobre HTML5, CSS3, Bootstrap, PHP, MySQL, Ajax, Git e GitHub. Além disso, 
+                       já trabalhei na empresa do meu pai, onde tive contato desde cedo com tecnologia,
+                       pois ele foi o primeiro a ter um computador na nossa cidade e prestava assistência
+                       para empresas da região.</p>
+                    <p>Também participei de um projeto de extensão na minha antiga faculdade, ensinando 
+                       programação em C para alunos de escolas. Estou sempre em busca de novas 
+                       oportunidades na área e aprimoramento contínuo.</p>
+                    <p>Adoro Desenvolvimento Web e Estrutura de Dados 1.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
             
+            <h3 class="skill-category">Linguagens de Programação</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="img/icon js.png" alt="JavaScript" class="normal">
+                    <img src="img/icon js -- hover.png" alt="JavaScript" class="hover">
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
 
-            <h1 class="titulo"> Sobre mim </h1> 
-        
-            <div class="conteudo">
-            <img src="./img/minhafoto.png" alt="Retangulo" class="foto">
-            <div class="descricao">
-                <h2>Sou estudante do 4º período da faculdade e tenho experiência em desenvolvimento
-                    web e programação. Fiz diversos cursos, incluindo um curso completo na Udemy 
-                    sobre HTML5, CSS3, Bootstrap, PHP, MySQL, Ajax, Git e GitHub. Além disso, 
-                    já trabalhei na empresa do meu pai, onde tive contato desde cedo com tecnologia,
-                    pois ele foi o primeiro a ter um computador na nossa cidade e prestava assistência
-                    para empresas da região. Também participei de um projeto de extensão na minha 
-                    antiga faculdade, ensinando programação em C para alunos de escolas
-                    . Estou sempre em busca de novas oportunidades na área e aprimoramento 
-                    contínuo. <br>  <br>
-                    Adoro Desenvolvimento Web e Estrutura de Dados 1.
-            
+            <h3 class="skill-category">Ferramentas de desenvolvimento</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="img/icon git.png" alt="Git" class="normal">
+                    <img src="img/icon git -- hover.png" alt="Git" class="hover">
+                    <h4>Git</h4>
+                </div>
+            </div>
 
-            </h2>
-        </div>
-        </div>
-        </section>
-  
-        <section id="minhas-habilidades">
-            <h1 class="titulo">Skills</h1>
-            <h2 class="titulo">Linguagens de Programação</h2>
-            <div id="habilidades">
-              
-               
-                <div class="card">
-                    <img src="./img/icon js.png" alt="JAVASCRIPT" class="normal">
-                    <img src="./img/icon js -- hover.png" alt="JAVASCRIPT" class="hover">
-                    <h1>JavaScript</h1>
+            <h3 class="skill-category">Tecnologias</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="img/icon html.png" alt="HTML5" class="normal">
+                    <img src="img/icon html -- hover.png" alt="HTML5" class="hover">
+                    <h4>HTML5</h4>
                 </div>
-             
-            </div>
-        </section>
-        <section id="minhas-habilidades">
-            <h2 class="titulo">Ferramentas de desenvolvimento</h2>
-            <div id="habilidades">
-         
-                <div class="card">
-                    <img src="./img/icon git.png" alt="GIT" class="normal">
-                    <img src="./img/icon git -- hover.png" alt="GIT" class="hover">
-                    <h1>Git</h1>
+                <div class="skill-card">
+                    <img src="img/icon css.png" alt="CSS3" class="normal">
+                    <img src="img/icon css - hover.png" alt="CSS3" class="hover">
+                    <h4>CSS3</h4>
                 </div>
             </div>
-        </section>
-        <section id="minhas-habilidades">
-            <h2 class="titulo"> Tecnologias</h2>
-            <div id="habilidades">
-                <div class="card">
-                    <img src="./img/icon html.png" alt="HTML5" class="normal">
-                    <img src="./img/icon html -- hover.png" alt="HTML5" class="hover">
-                    <h1>HTML5</h1>
-                </div>
-                <div class="card">
-                    <img src="./img/icon css.png" alt="CSS3" class="normal">
-                    <img src="./img/icon css - hover.png" alt="CSS" class="hover">
-                    <h1>CSS3</h1>
-                </div>
-                
+
+            <div class="soft-skills">
+                <h3 class="skill-category">Habilidades Interpessoais</h3>
+                <p>Sou uma programadora que alia técnica e habilidades interpessoais.
+                   Escuta ativa, comunicação clara e tomada de decisão garantem
+                   projetos eficientes. Inteligência emocional, networking e 
+                   respeito às diferenças fortalecem meu trabalho em equipe. Com
+                   criatividade e gestão de tempo, entrego soluções inovadoras 
+                   e eficazes.</p>
             </div>
         </section>
-        <section id="minhas-habilidades">
-            <h1 class="titulo"> Habilidades </h1>
-            <div id="sobre">
-                <h2>Sou uma programadora que alia técnica e habilidades interpessoais.
-                    Escuta ativa, comunicação clara e tomada de decisão garantem
-                    projetos eficientes. Inteligência emocional, networking e 
-                    respeito às diferenças fortalecem meu trabalho em equipe. Com
-                    criatividade e gestão de tempo, entrego soluções inovadoras 
-                    e eficazes. </h2>
-            </div>
-            
-         
-        </section>
- 
-        <section id="projetos"> <br>
-            <h1>Meus Projetos</h1>
-            <div id="sites">
-                <div id="shopify" allowfullscreen>
-                    <h1>Projeto LoadingPage Shopify</h1>
-                    <iframe src="./Shopify/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
-                    <div class="botoes">
-                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
-                        <a href="https://github.com/LauraLobo/Shopify/tree/main/Shopify" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+
+        <section id="projetos">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Projeto LoadingPage Shopify</h3>
+                    <iframe src="./Shopify/index.html" frameborder="0"></iframe>
+                    <div class="project-buttons">
+                        <button class="fullscreen-btn">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/LauraLobo/Shopify/tree/main/Shopify" target="_blank" class="repo-btn">
+                            IR PARA O REPOSITÓRIO
+                        </a>
                     </div>
                 </div>
-                <div id="netflix" allowfullscreen>
-                    <h1>Projeto Clone Site Netflix</h1>
-                    <iframe src="./Netflix/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
-                    <div class="botoes">
-                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
-                        <a href="https://github.com/LauraLobo/Netflix/tree/main/Netflix" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                <div class="project-card">
+                    <h3>Projeto Clone Site Netflix</h3>
+                    <iframe src="./Netflix/index.html" frameborder="0"></iframe>
+                    <div class="project-buttons">
+                        <button class="fullscreen-btn">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/LauraLobo/Netflix/tree/main/Netflix" target="_blank" class="repo-btn">
+                            IR PARA O REPOSITÓRIO
+                        </a>
                     </div>
                 </div>
-                <div id="wildbeast" allowfullscreen>
-                    <h1>Projeto Site WildBest</h1>
-                    <iframe src="./WildBeast/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
-                    <div class="botoes">
-                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
-                        <a href="https://github.com/LauraLobo/WildBeast/tree/main/WildBeast" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                <div class="project-card">
+                    <h3>Projeto Site WildBest</h3>
+                    <iframe src="./WildBeast/index.html" frameborder="0"></iframe>
+                    <div class="project-buttons">
+                        <button class="fullscreen-btn">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/LauraLobo/WildBeast/tree/main/WildBeast" target="_blank" class="repo-btn">
+                            IR PARA O REPOSITÓRIO
+                        </a>
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/LauraLobo" target="_blank"><button class="mais">VER MAIS</button></a>
+            <a href="https://github.com/LauraLobo" target="_blank" class="see-more">VER MAIS</a>
         </section>
 
-
+        <section id="team">
+            <h2 class="section-title">Nossa Equipe</h2>
+            <div class="swiper team-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="team-card">
+                            <div class="card-image">
+                                <img src="img/instagram.png" alt="Team Member">
+                                <div class="card-shadow"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Kell Dawx</h3>
+                                <p>Passionate about development and design, I carry out projects at the request of users.</p>
+                                <a href="#" class="card-button">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-card">
+                            <div class="card-image">
+                                <img src="img/linkedin.png" alt="Team Member">
+                                <div class="card-shadow"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Kell Dawx</h3>
+                                <p>Passionate about development and design, I carry out projects at the request of users.</p>
+                                <a href="#" class="card-button">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botões de navegação DEVEM estar fora do .swiper-wrapper -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <div id="msg">
-            <h1><xmp></Laura ></xmp></h1>
-            <h2>2024, alguns direitos reservados. By: Laura Lobo.</h2>
-        </div>
-        <div id="contatos">
-            <h1>Contatos</h1>
-            <ul>
-                <li><img src="./img/gmail.png" alt="gmail"> <a href="lauralobopinheiro@hotmail.com"
-                        target="_blank">lauralobopinheiro@hotmail.com</a></li>
-                <li><img src="./img/instagram.png" alt="instagram"><a href="https://www.instagram.com/lauraaloboo/"
-                        target="_blank">@lauraaloboo</a></li>
-                <li><img src="./img/github.png" alt="github"> <a href="https://github.com/LauraLobo"
-                        target="_blank">LauraLobo</a></li>
-                <li><img src="./img/linkedin.png" alt="linkedin"><a
-                        href="https://www.linkedin.com/in/lauraaloboo/" target="_blank">Laura
-                        Lobo</a></li>
-            </ul>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2><xmp><Laura /></xmp></h2>
+                <p>2024, alguns direitos reservados. By: Laura Lobo.</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contatos</h3>
+                <ul>
+                    <li>
+                        <img src="img/gmail.png" alt="Email">
+                        <a href="mailto:lauralobopinheiro@hotmail.com">lauralobopinheiro@hotmail.com</a>
+                    </li>
+                    <li>
+                        <img src="img/instagram.png" alt="Instagram">
+                        <a href="https://www.instagram.com/lauraaloboo/" target="_blank">@lauraaloboo</a>
+                    </li>
+                    <li>
+                        <img src="img/github.png" alt="GitHub">
+                        <a href="https://github.com/LauraLobo" target="_blank">LauraLobo</a>
+                    </li>
+                    <li>
+                        <img src="img/linkedin.png" alt="LinkedIn">
+                        <a href="https://www.linkedin.com/in/lauraaloboo/" target="_blank">Laura Lobo</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
-<script>
-let menuButton = document.querySelector("#menu");
-let menu = document.querySelector(".menu");
 
-menuButton.addEventListener("click", function () {
-    menu.classList.toggle("open");
-});
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Menu mobile
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.querySelector('.menu');
+        
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
 
-const botoesTelaCheia = document.querySelectorAll('.botao-tela-cheia');
-const iframes = document.querySelectorAll('iframe');
+        // Código animado
+        const codeElement = document.querySelector('.code-animation pre');
+        const code = `let button_menu = document.querySelector(".header_button");
+let float_menu = document.querySelector(".header_menu--float");
 
-botoesTelaCheia.forEach((botao, index) => {
-  botao.addEventListener('click', () => {
-    iframes[index].requestFullscreen();
-  });
-});
-</script>
+let line_top = document.querySelector(".header_button_line--top");
+let line_under = document.querySelector(".header_button_line--bottom");
+
+button_menu.isSelected = false;
+
+function addEffectWriting(element, time) {
+    let element_array = element.innerText.split("");
+    element.count = 0;
+    element.innerText = "";
+
+    function writeSymbols() {
+        element.innerText += element_array[element.count];
+        element.count++;
+        if (element.count <= element_array.length) {
+            setTimeout(() => {
+                writeSymbols();
+            }, time);
+        }
+    }
+    writeSymbols();
+}`;
+
+        let index = 0;
+        const typeCode = setInterval(() => {
+            if (index < code.length) {
+                codeElement.textContent += code[index];
+                index++;
+            } else {
+                clearInterval(typeCode);
+            }
+        }, 50);
+
+        // Fullscreen buttons
+        const fullscreenBtns = document.querySelectorAll('.fullscreen-btn');
+        const iframes = document.querySelectorAll('iframe');
+
+        fullscreenBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                iframes[index].requestFullscreen();
+            });
+        });
+
+        // Initialize Swiper
+        const swiper = new Swiper('.team-slider', {
+            loop: true,
+            spaceBetween: 10,
+            grabCursor: true,
+            slidesPerView 1, 
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 1,
+                },
+                968: {
+                    slidesPerView: 1,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
