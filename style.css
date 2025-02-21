@@ -324,7 +324,7 @@ nav xmp {
 
 .card-image {
   position: relative;
-  background-color: #ffba08;
+  background-color: #251d25;
   padding-top: 1.5rem;
   margin-bottom: -0.75rem;
 }
@@ -347,7 +347,7 @@ nav xmp {
 .card-shadow {
   width: 20rem;
   height: 20rem;
-  background-color: #cc8f00;
+  background-color: #7002ba;
   border-radius: 50%;
   position: absolute;
   top: 3.75rem;
@@ -369,7 +369,7 @@ nav xmp {
 
 .card-button {
   display: inline-block;
-  background-color: #ffba08;
+  background-color: #F0E3CA;
   padding: 0.75rem 1.5rem;
   border-radius: 0.25rem;
   color: #1A1F2C;
@@ -401,6 +401,7 @@ footer {
   font-size: 2.6rem;
   color: #8702e0;
   margin-bottom: 1rem;
+  
 }
 
 .footer-brand p {
