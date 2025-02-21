@@ -4,7 +4,7 @@
 > Caso quiser dar uma olhada no meu linkedin e se interessar <a href="https://www.linkedin.com/in/lauraaloboo/">Linkedin</a>
 
 <p align="center">
-  <img width="600 height="400 src="colocar gif aqui">
+  <img width="600 height="400 src="portifoliolaura.gif">
 </p>
 
 <div align="center">
