@@ -118,7 +118,7 @@ nav a#menu {
 #sobre h3 {
   font-weight: 400;
   color: #F0E3CA;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.1;
   word-wrap: break-word;
   max-width: calc(100% 40px);
@@ -168,10 +168,9 @@ nav a#menu {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  max-width: 1000px;
+  max-width: 900px;
   width: 100%;
-  flex-wrap: wrap;
-  padding: 0 50px;
+  padding: 0 40px;
   box-sizing: border-box;
 }
 
@@ -189,6 +188,7 @@ nav a#menu {
   padding-bottom: 20px;
   width: 100%;
   text-align: center;
+  padding-right: 35px;
 }
 
 #historia h2 {
@@ -199,6 +199,7 @@ nav a#menu {
   max-width: 100%;
   text-align: center;
   padding: 0 2px;
+  padding-right: 35px;
 }
 
 .foto {
@@ -207,6 +208,7 @@ nav a#menu {
   border-radius: 10px;
   object-fit: cover;
   display: block;
+  padding-right: 35px;
 
 }
 
@@ -225,7 +227,7 @@ nav a#menu {
 }
 
 #minhas-habilidades h1.titulo {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 700;
   color: #8702e0;
   text-align: center;
@@ -235,7 +237,7 @@ nav a#menu {
 
 #minhas-habilidades h2 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   line-height: 1.42;
   padding: 50px;
@@ -563,11 +565,11 @@ footer {
     }
   
     #historia h1.titulo {
-      font-size: 24px; /* Ajuste de tamanho da fonte */
+      font-size: 35px; /* Ajuste de tamanho da fonte */
     }
   
     #historia h2 {
-      font-size: 16px; /* Ajuste do tamanho da fonte */
+      font-size: 22px; /* Ajuste do tamanho da fonte */
     }
   
     #sobre h1 {
@@ -628,7 +630,7 @@ footer {
   }
 
   #sobre h3 {
-    font-size: 17px;
+    font-size: 22px;
     margin-right: 20px;
   }
 
@@ -674,7 +676,7 @@ footer {
 
   #historia,
   #habilidades {
-    padding: 50px 0 50px 60px;
+    padding: 30px 0 20px 60px;
   }
 
   #habilidades {
