@@ -215,11 +215,9 @@ nav xmp {
   max-width: 80rem;
   margin: 0 auto;
   text-align: center;
-  border-top: 2px solid #665869;
-  border-bottom: 2px solid #665869; 
-  padding: 90px;
-  
-  
+  padding: 8rem 4rem;
+
+
 }
 
 .soft-skills p {
@@ -230,6 +228,7 @@ nav xmp {
 #projetos {
   padding: 8rem 4rem;
   border-bottom: 2px solid #665869;
+  border-top: 2px solid #665869;
 }
 
 .projects-grid {
