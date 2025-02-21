@@ -357,13 +357,14 @@ nav xmp {
 }
 
 .card-content h3 {
-  font-size: 2rem;
-  color: #0FA0CE;
+  font-size: 4rem;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .card-content p {
   margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .card-button {
@@ -371,7 +372,7 @@ nav xmp {
   background-color: #F0E3CA;
   padding: 0.75rem 1.5rem;
   border-radius: 0.25rem;
-  color: #1A1F2C;
+  color: #251d25;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s;
@@ -393,6 +394,10 @@ footer {
   align-items: flex-start;
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.footer-brand {
+  text-align: center; /* Garante que todo o conteúdo dentro da .footer-brand fique centralizado */
 }
 
 .footer-brand h2 {
