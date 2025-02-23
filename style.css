@@ -268,10 +268,11 @@ nav xmp {
 
 .fullscreen-btn,
 .repo-btn {
-  background-color: #8702e0;
-  border: 2px solid #665869;
-  color: white;
-  padding: 1rem 2rem;
+  background-color: #F0E3CA;
+  border: 0.50px solid #251d25;
+  color: #251d25;
+  padding: 0.50rem 2rem;
+  border-radius: 0.40rem;
   font-size: 1.6rem;
   font-weight: 700;
   cursor: pointer;
@@ -281,15 +282,15 @@ nav xmp {
 
 .fullscreen-btn:hover,
 .repo-btn:hover {
-  background-color: #7002ba;
+  background-color:#665869;
 }
 
 .see-more {
   display: block;
   width: fit-content;
   margin: 0 auto;
-  background-color: #8702e0;
-  color: white;
+  background-color: #F0E3CA;
+  color: rgba(15, 11, 15, 0.95);
   padding: 1.5rem 3.5rem;
   border-radius: 1rem;
   font-size: 2rem;
@@ -300,7 +301,7 @@ nav xmp {
 }
 
 .see-more:hover {
-  background-color: #7002ba;
+  background-color: #665869;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -379,7 +380,7 @@ nav xmp {
 }
 
 .card-button:hover {
-  background-color: #cc8f00;
+  background-color: #665869;
 }
 
 /* Footer */
