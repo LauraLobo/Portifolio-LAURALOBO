@@ -236,6 +236,11 @@ nav xmp {
   background: linear-gradient(to right, #8702e0, #a44bd6);
 }
 
+.skill-text {
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+
 
 
 .soft-skills {
