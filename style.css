@@ -2,12 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  /* Garante que pading e bordas nao aumentem o tamanho do elemento */
 }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+  font-size: 62.5%;   /* Facilita o uso de rem como unidade de medida */
+  scroll-behavior: smooth;  /* Suaviza a rolagem da página */
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   background-color: #070706;
   color: #F0E3CA;
   line-height: 1.6;
-  padding-top: 150px;
+  padding-top: 150px;  /* Espaço para o cabeçalho fixo */
 }
 
 /* Header e navegação */
@@ -25,8 +25,8 @@ header {
   left: 0;
   width: 100%;
   background-color: rgba(15, 11, 15, 0.69);
-  z-index: 1000;
-  backdrop-filter: blur(8px);
+  z-index: 1000;  /* Mantém o cabeçalho acima de outro elementos */
+  backdrop-filter: blur(8px);  /* Efeito de desfoque no fundo */
 }
 
 nav {
@@ -61,7 +61,7 @@ nav xmp {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 700;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease;  /* Suaviza a transcrição de cor */
 }
 
 .menu a:hover {
@@ -69,7 +69,7 @@ nav xmp {
 }
 
 #menuBtn {
-  display: none;
+  display: none;  /* Escondido por padrão mas aparece em telas menores */
   background: none;
   border: none;
   cursor: pointer;
@@ -120,7 +120,7 @@ nav xmp {
   word-wrap: break-word;
 }
 
-/* Sobre section */
+/* Seção Sobre */
 #sobre {
   border-top: 2px solid #665869;
   border-bottom: 2px solid #665869;
@@ -156,7 +156,7 @@ nav xmp {
   margin-top: 2rem;
 }
 
-/* Skills section */
+/* Seção de Skills */
 #skills {
   padding: 8rem 4rem;
 }
@@ -184,7 +184,7 @@ nav xmp {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease;  /* Efeito de escala quando passa o mouse */
 }
 
 .skill-card:hover {
@@ -224,7 +224,7 @@ nav xmp {
   font-size: 1.8rem;
 }
 
-/* Projects section */
+/* Seção de Projetos */
 #projetos {
   padding: 8rem 4rem;
   border-bottom: 2px solid #665869;
@@ -306,7 +306,7 @@ nav xmp {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Team section */
+/* Seção de Equipe */
 #team {
   padding: 8rem 4rem;
 }
@@ -383,7 +383,7 @@ nav xmp {
   background-color: #665869;
 }
 
-/* Footer */
+/* Footer Rodapé */
 footer {
   border-top: 2px solid #665869;
   padding: 5rem 4rem;
@@ -456,7 +456,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Responsividade */
 @media (max-width: 1024px) {
   .hero {
       flex-direction: column;

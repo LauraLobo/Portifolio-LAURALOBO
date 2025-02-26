@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Laura Lobo</title>
+
+    <!-- Estilos do site -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap" rel="stylesheet">
@@ -11,7 +13,7 @@
 <body>
     <header>
         <nav>
-            <h1><xmp><Laura Lobo/></xmp></h1>
+            <h1><xmp><Laura Lobo/></xmp></h1> <!-- Nome estilizado -->
             <button id="menuBtn"><img src="img/menu.png" alt="Menu"></button>
             <ul class="menu">
                 <li><a href="#home">Página Inicial</a></li>
@@ -24,6 +26,8 @@
     </header>
 
     <main>
+        <!-- Seção principal..Onde eu me apresento -->
+
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Laura Lobo</h1>
@@ -33,10 +37,10 @@
                    alcançar meus sonhos.</p>
             </div>
             <div class="code-animation">
-                <pre></pre>
+                <pre></pre> <!-- Aqui começa a animação do código rolando -->
             </div>
         </section>
-
+        <!-- Sobre mim -->
         <section id="sobre">
             <h2 class="section-title">Sobre mim</h2>
             <div class="about-content">
@@ -56,6 +60,7 @@
             </div>
         </section>
 
+        <!-- Skills e softskills -->
         <section id="skills">
             <h2 class="section-title">Skills</h2>
             
@@ -102,6 +107,8 @@
             </div>
         </section>
 
+        <!-- Meus Projetos -->
+
         <section id="projetos">
             <h2 class="section-title">Meus Projetos</h2>
             <div class="projects-grid">
@@ -139,6 +146,8 @@
             <a href="https://github.com/LauraLobo" target="_blank" class="see-more">VER MAIS</a>
         </section>
 
+        <!-- Contatos -->
+
         <section id="team">
             <h2 class="section-title">Contatos</h2>
             <div class="swiper team-slider">
@@ -156,6 +165,9 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Botões Swiper -->
+
                     <div class="swiper-slide">
                         <div class="team-card">
                             <div class="card-image">
@@ -199,13 +211,15 @@
                     </div>
                 </div>
  
-                <!-- Botões de navegação DEVEM estar fora do .swiper-wrapper -->
+                
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>
+
+    <!-- Meu rodapé -->
 
     <footer id="contato">
         <div class="footer-content">
@@ -219,12 +233,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        // Menu mobile
+        // Menu mobile responsivo
         const menuBtn = document.getElementById('menuBtn');
         const menu = document.querySelector('.menu');
         
         menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('open');
+            menu.classList.toggle('open'); //Abre e fecha o menu no mobile
         });
 
         // Código animado
@@ -264,17 +278,17 @@ function addEffectWriting(element, time) {
             }
         }, 50);
 
-        // Fullscreen buttons
+        // Botão de tela cheia nos projetos
         const fullscreenBtns = document.querySelectorAll('.fullscreen-btn');
         const iframes = document.querySelectorAll('iframe');
 
         fullscreenBtns.forEach((btn, index) => {
             btn.addEventListener('click', () => {
-                iframes[index].requestFullscreen();
+                iframes[index].requestFullscreen(); // Abre os projetos em tela cheia
             });
         });
 
-        // Initialize Swiper
+        // Configuração do Swiper
         const swiper = new Swiper('.team-slider', {
             loop: true,
             spaceBetween: 10,
