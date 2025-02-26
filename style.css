@@ -485,6 +485,19 @@ footer {
 }
 
 /* Responsividade */
+@media (max-width: 600px) {
+  .skill-level-container {
+    flex-direction: column; /* Empilha os itens em telas pequenas */
+    align-items:flex-start;
+    font-size: 1.3rem; /* Reduz o tamanho da fonte */
+    width: 90%;
+  }
+
+  .progress-bar {
+    width: 100%; /* Usa toda a largura da tela */
+  }
+}
+
 @media (max-width: 1024px) {
   .hero {
       flex-direction: column;
