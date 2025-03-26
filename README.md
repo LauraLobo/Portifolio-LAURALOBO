@@ -1,6 +1,6 @@
 <h1 align="center">Portifolio - Laura Lobo</h1>
 
-> Este é meu portifolio <a href="https://portifoliolaura.netlify.app/">Visite a página</a> <br>
+> Este é meu portifolio <a href="https://portifolio-lauralobo.netlify.app/">Visite a página</a> <br>
 > Caso quiser dar uma olhada no meu linkedin <a href="https://www.linkedin.com/in/lauraaloboo/">Linkedin</a>
 
 <p align="center">
@@ -20,5 +20,5 @@
 
 
 
-[⬆ Volte para o topo!](https://github.com/LauraLobo/Portifolio-Laura)<br>
+
 # Portifolio-Laura-Lobo
